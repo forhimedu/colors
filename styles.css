@@ -20,7 +20,7 @@ body {
 }
 
 .colors {
-  height: 40vh;
+  min-height: 20vh;
   background-color: rgb(175, 230, 183);
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +29,7 @@ body {
 }
 
 .states {
-  height: 20%;
+  min-height: 20%;
   background-color: rgb(165, 157, 224);
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +67,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 1;
 }
 
 .state {
@@ -84,11 +83,11 @@ img {
 }
 
 .selectedColor {
-  border: solid 2px red;
+  outline: solid 0.2rem rgb(217, 46, 34);
 }
 
 .selectedState {
-  outline: solid 2px rgb(210, 92, 92);
+  outline: solid 3px rgb(37, 101, 219);
 }
 
 .black {

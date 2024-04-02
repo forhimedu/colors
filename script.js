@@ -4,6 +4,7 @@ const substanceName = document.querySelector('.substanceName');
 const submitBtn = document.querySelector('.submitBtn');
 const nextBtn = document.querySelector('.nextBtn');
 const score = document.querySelector('.score');
+const results = document.querySelector('.results');
 
 boxes.forEach(box => {
   box.addEventListener('click', () => {
@@ -62,7 +63,7 @@ const data = [
   ['FeO','black','solid'],
   ['Fe\u2083O\u2084','black','solid'],
   ['CuS','black','solid'],
-  ['I\u2082','black','solid'],
+  ['I\u2082','purple','solid'],
 ]
 
 function clearClasses() {
@@ -79,24 +80,28 @@ function App() {
   let already = false;
   nextBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    if (i == data.length) {
-      shuffledData = shuffleArray(data);
-      i = 0;
+    if (already == false) {
+      if (i == data.length) {
+        shuffledData = shuffleArray(data);
+        i = 0;
+      }
+        already = true;
+        start = true;
+        elem = shuffledData[i];
+        i++;
+        substanceName.innerHTML = elem[0];  
+        clearClasses();
     }
-      already = true;
-      start = true;
-      elem = shuffledData[i];
-      i++;
-      substanceName.innerHTML = elem[0];
+    
   })
   submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
     if (already && start && document.querySelector('.selectedState').classList.contains(`${elem[2]}`) && 
     (document.querySelector('.selectedColor').classList.contains(`${elem[1]}`)) ) {
+      results.innerHTML = "";
       newScore++;
       score.innerHTML = newScore;
-      already = false;  
-      clearClasses()
+      already = false;
     } else if (already && start && document.querySelector('.selectedState') && document.querySelector('.selectedColor')) {
       newScore--;
       score.innerHTML = newScore;
