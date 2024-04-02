@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 90%;
+  padding: 1rem;
+}
+
+.colors {
+  height: 40vh;
+  background-color: rgb(175, 230, 183);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.states {
+  height: 20%;
+  background-color: rgb(165, 157, 224);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.states {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  margin: 1rem;
+}
+
+.substance {
+  height: 10%;
+  background-color: rgb(237, 240, 205);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color {
+  height: 4rem;
+  width: 5rem;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+}
+
+.state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 30%;
+}
+
+img {
+  max-width: 10rem;
+  height: auto;
+}
+
+.selectedColor {
+  border: solid 2px red;
+}
+
+.selectedState {
+  outline: solid 2px rgb(210, 92, 92);
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: rgb(11, 141, 11);
+}
+
+.white {
+  background-color: white;
+}
+
+.purple {
+  background-color: rgb(133, 14, 133);
+  color: white;
+}
+
+.brown {
+  background-color: rgb(102, 19, 19);
+  color: white;
+}
+
+.pink {
+  background-color: pink;
+  color: black;
+}
+
+.colorless {
+  color: black;
+}
+
+.blue {
+  background-color: rgb(79, 79, 195);
+  color: white;
+}
+
+.orange {
+  background-color: rgb(231, 110, 50);
+}
+
+.red {
+  background-color: rgb(132, 4, 4);
+  color: white;
+}
+
+.gray {
+  background-color: gray;
+  color: white;
+}
+.scoreContainer {
+  font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  img {
+    max-width: 100%; /* Adjust this value as needed */
+    height: auto; /* Maintains the aspect ratio of the image */
+  }
+}
+
+.scoreContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+button {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  overflow: visible;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 0.5rem;
+}
+
+
+
+button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.submitBtn {
+  background-color: rgb(33, 184, 13);
+}
+
+.nextBtn {
+  background-color: rgb(118, 118, 215);
+}
