@@ -64,6 +64,23 @@ const data = [
   ['Fe\u2083O\u2084','black','solid'],
   ['CuS','black','solid'],
   ['I\u2082','purple','solid'],
+  ['MnSO\u2084', 'pink', 'solid'],
+  ['Fe(CNS)\u2083', 'red', 'solid'],
+  ['CaCO\u2083', 'white', 'solid'],
+  ['NiS', 'black', 'solid'],
+  ['CdS', 'yellow', 'solid'],
+  ['MnS', 'pink', 'solid'],
+  ['ZnS', 'white', 'solid'],
+  ['GeO', 'black', 'solid'],
+  ['GeO\u2082', 'white', 'solid'],
+  ['SiO\u2082', 'colorless', 'solid'],
+  ['SiO(қара-ҚОҢЫР)', 'brown', 'solid'], 
+  ['CO', 'colorless', 'gas'],
+  ['CO\u2082', 'colorless', 'gas'],
+  ['SnO\u2082', 'white', 'solid'],
+  ['SnO', 'black', 'solid'],
+  ['PbO\u2082(қара ау, бірақ кітапта САРЫ)', 'yellow', 'solid'],
+  ['PbO(қызыл немесе САРЫ)', 'yellow', 'solid'],
 ]
 
 function clearClasses() {
